@@ -1,0 +1,41 @@
+print('========================================')
+monto = 0
+rut = input('Ingresa tu rut ')
+nombre = input('Ingresa tu nombre ')
+print('Tu monto es de $',monto)
+print('========================================')
+desicion = int(input('Ingresa el número "1" para ingresar a tu sesion'));
+while desicion == 1:
+    print('MENU')
+    print('-1. Deposito')
+    print('-2. Giro')
+    print('========================================')
+    proceso = int(input('Ingresa la opcion que deceas realizar '))
+    print('========================================')
+    if proceso == 1:
+        deposito = int(input('¿Cual es el monto de tu deposito? '))
+        print('========================================')
+        print ('Cliente: ', nombre)
+        print ('RUT: ',rut)
+        print('El monto total de tu saldo es: ', monto+deposito)
+    elif proceso > 2:
+        print('La opcion que elegiste no es valida')
+    elif proceso < 1:
+        print('La opcion que ingresaste es invalida')
+    elif proceso == 2:
+        giro = int(input('Ingresa el monto que deceas retirar '))
+        print('========================================')
+        print ('Cliente: ', nombre)
+        print ('RUT: ',rut)
+        print('Haz retirado $',giro, 'de tu cuenta, tu moto actual es de $',monto-giro )
+    print('========================================')
+    print ('¿Deceas realizar otra transacción?')
+    print('========================================')
+    print ('Opciones')
+    print ('1.- SI')
+    print ('2.- No')
+    print('========================================')
+    desicion = int(input("Ingresa tu opcion: "))
+    print('========================================')
+    print ('Que tengas buen día!!!')  
+    print('========================================')
